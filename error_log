@@ -1,0 +1,7 @@
+[23-Apr-2018 19:44:10 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mongodb.dll' (tried: /opt/php70/lib/php/extensions/no-debug-non-zts-20151012\php_mongodb.dll (Le module sp�cifi� est introuvable.), /opt/php70/lib/php/extensions/no-debug-non-zts-20151012\php_php_mongodb.dll.dll (Le module sp�cifi� est introuvable.)) in Unknown on line 0
+[23-Apr-2018 14:44:47 America/Chicago] PHP Warning:  session_start(): open(/tmp\sess_nbkh0079fbfe1up0sbgnm8t1e1, O_RDWR) failed: No such file or directory (2) in D:\Fac\IBM\FishingSitesDetection\plug-in\Plugin\PhishingFinish_Chrome\reportValidation.php on line 2
+[23-Apr-2018 14:44:47 America/Chicago] PHP Warning:  session_start(): Failed to read session data: files (path: /tmp) in D:\Fac\IBM\FishingSitesDetection\plug-in\Plugin\PhishingFinish_Chrome\reportValidation.php on line 2
+[23-Apr-2018 14:44:47 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'MongoDB\Driver\Manager' not found in D:\Fac\IBM\FishingSitesDetection\plug-in\Plugin\PhishingFinish_Chrome\reportValidation.php:30
+Stack trace:
+#0 {main}
+  thrown in D:\Fac\IBM\FishingSitesDetection\plug-in\Plugin\PhishingFinish_Chrome\reportValidation.php on line 30

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="skin/popup.css">
+    <link href="skin/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<!-- Set tabindex to work around Chromium issue 304532 -->
+<body class="nohtml" tabindex="1">
+
+<header>
+    <img id="logo" src="images/logogreat.png" srcset="icons/detailed/abp-128.png 2x" width="80px" height="100px">
+</header>
+<div class="card" style="width: 18rem;text-align: center">
+
+    <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="trust_text">Trusted website</h5>
+        <img  src="skin/tick.png" id="trust_image" alt="Card image cap" width="35px" height="35px" style="alignment: center">
+        <hr class="style14">
+        <p class="card-text">This result sounds wrong? <br> Send us a report!</p>
+        <button id="btn" itemid="btn" class="btn btn-primary" style="background: #e65c00;border-color: #e65c00">Send a report</button>
+    </div>
+</div>
+
+<div id="screenshot"></div>
+
+
+<script src="html2canvas.js"></script>
+<script src="popup.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>

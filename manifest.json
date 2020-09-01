@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "PhishingTerminator",
+    "version": "1.0",
+    "description": "Detect Phishing Sites",
+  "content_security_policy" : "script-src 'self' https://ajax.googleapis.com https://www.google.com ;object-src 'self' ",
+
+  "icons": {
+        "16": "images/logogreat.png",
+        "48": "images/logogreat.png",
+        "128": "images/logogreat.png"
+    },
+
+	"browser_action": {
+		"default_icon": {
+			"19": "images/logo.png",
+			"38": "images/logo.png"
+		},
+		"default_title": "PhishingTerminator",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "js/monitor.js"
+
+
+        ]
+    },
+	"content_scripts":[{
+		"matches":["*://*/*"],
+		"js": ["js/dom.js","popup.js"]
+	}],
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+	"web_accessible_resources": [
+		"images/phish.jpg"
+	]
+
+}
